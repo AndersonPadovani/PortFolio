@@ -12,7 +12,7 @@ import curriculo from '../../files/curriculo.pdf';
 
 import Cards from '../../componente/cardUser/cardUser';
 
-import axios from 'axios';
+import axios from 'axios';a
 
 function Index() {
   let myInfo = "Bom o que estou procurando é uma oportunidade para que possa ingressar na área de desenvolvedor, "+
