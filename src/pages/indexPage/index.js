@@ -41,7 +41,7 @@ function Index() {
   return (
     <div className="App">
 
-      <div className='containecr'>
+      <div className='container'>
        
         <div className='menu'>
 
