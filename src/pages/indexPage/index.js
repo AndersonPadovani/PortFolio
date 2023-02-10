@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './index.css';
-import './media.css';
+import './media.css'
 
 import Logo from '../../img/logo.svg';
 import Foto from '../../img/foto-apresentacao.svg';
@@ -12,7 +12,7 @@ import curriculo from '../../files/curriculo.pdf';
 
 import Cards from '../../componente/cardUser/cardUser';
 
-import axios from 'axios';a
+import axios from 'axios';
 
 function Index() {
   let myInfo = "Bom o que estou procurando é uma oportunidade para que possa ingressar na área de desenvolvedor, "+
@@ -59,10 +59,10 @@ function Index() {
 
           <div className='menu-bar'>
             <ul>
-              <li key="1"><a href='/'>Home</a></li>
-              <li key="2"><a href='#sobre'>Quem sou</a></li>
-              <li key="3"><a href='#experiencias'>Experiência</a></li>
-              <li key="4"><a href='#projetos'>Projetos</a></li>
+              <li key="5"><a href='/'>Home</a></li>
+              <li key="6"><a href='#sobre'>Quem sou</a></li>
+              <li key="7"><a href='#experiencias'>Experiência</a></li>
+              <li key="8"><a href='#projetos'>Projetos</a></li>
             </ul>
           </div>
     
@@ -131,7 +131,7 @@ function Index() {
             <div className='empresas'>
               <ul>
                 {
-                   Object.keys(empresas).map(work => <button onClick={() => setInfo(work)}><li key={Math.random() * (9, 100).toString()} >{work}</li></button> )
+                   Object.keys(empresas).map(work => <button onClick={() => setInfo(work)}><li key={Math.random() * (10, 100).toString()} >{work}</li></button> )
                 }
               </ul>
             </div>
@@ -150,7 +150,8 @@ function Index() {
                 return  <Cards 
                           title={card[k]['title']} 
                           image={require('../../img/'+card[k]['img'])} 
-                          info={card[k]['info']} url={card[k]['url']} 
+                          info={card[k]['info']}
+                          url={card[k]['url']} 
                           ver={card[k]['visible']} 
                           linkShow={card[k]['workStart']}/>
                 })
@@ -160,7 +161,8 @@ function Index() {
         </div>
 
         <footer className='footer'>
-
+          <span>Esta pagina foi criada e desenvolvido por Anderson Ramos Padovani 2022 &copy;</span>
+          <span>Projeto OpenSource- GITHUB <a href='https://github.com/AndersonPadovani/PortFolio' target='_blank' rel="noreferrer">VISITAR</a></span>
         </footer>
 
       </div>

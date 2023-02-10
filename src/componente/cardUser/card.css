@@ -38,18 +38,48 @@
     tab-size: 4;
 }
 
-.cardProjeto span{
+.buttonLink{
+    min-width: 100px;
+    height: 30px;
+
     position: absolute;
-
     bottom: 20px;
-}
-
-.linkAtivo{
-    color: var(--color-yellow);
 
 }
 
-.linkInativo{
+.button-visit{
+    min-width: 100px;
+    height: 30px;
+    background-color: rgba(100, 100, 100, 0.6);
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    vertical-align: middle;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 15px;
+
+    position: absolute;
+    bottom: 20px;
+
+    /* background-image: url("../../img/eye.png"); */
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position:  right 10px top 3px;
+
+    transition: all 0.5s;
+}
+
+.button-visit a{
     color: var(--color-white);
+}
 
+.button-visit a:hover{
+    color: var(--color--yellow);
+}
+
+.button-visit:hover{
+    background-color: rgba(30, 30, 30, 0.7);
 }

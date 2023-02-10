@@ -4,6 +4,17 @@ import "./card.css";
 
 const Card = (props) => {   
     const limitCaracter = 80; 
+
+    const ButtonVisit = () => {
+        const imgPath = props.linkShow === '1' ? "/eye.png" : "/eye-hidden.png";
+        const cursor = props.linkShow === '1' ? 'pointer' : 'not-allowed';
+        return(
+                
+                    <a className="buttonLink" href={props.url} style={{cursor: cursor}} ><label className="button-visit" 
+                    style={{    backgroundImage: `url(${process.env.PUBLIC_URL + imgPath})`,
+                                cursor: cursor}}>Visitar</label></a>
+        )
+    }
     
 
     if(props.ver === "1"){
@@ -14,12 +25,11 @@ const Card = (props) => {
                 <img src={props.image} alt="Imagen Card Projeto"></img>
     
                 <p>&emsp;{props.info.length > limitCaracter ? props.info.substring(0, limitCaracter) + ' ...' : props.info}</p>
-                
+
                 {
-                    props.ver === '1' && props.linkShow === '1' ? 
-                    <a className= 'linkAtivo' href={process.env.PUBLIC_URL+props.url} target={'_blank'} rel="noreferrer" >Ver Mais</a> :
-                    <span className="linkInativo">Ver Mais</span> 
+                    <ButtonVisit />
                 }
+
             </div>
         )
     }
