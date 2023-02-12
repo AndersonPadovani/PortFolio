@@ -144,6 +144,7 @@ function Index() {
         </div>
 
         <div id='projetos' className='projetos'>
+          <h1>PROJETOS</h1>
           { 
             card 
             ? Object.keys(card).map((k, i) => {
