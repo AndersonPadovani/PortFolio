@@ -9,10 +9,9 @@ const Card = (props) => {
         const imgPath = props.linkShow === '1' ? "/eye.png" : "/eye-hidden.png";
         const cursor = props.linkShow === '1' ? 'pointer' : 'not-allowed';
         return(
-                
-                    <a className="buttonLink" href={props.url} style={{cursor: cursor}} ><label className="button-visit" 
-                    style={{    backgroundImage: `url(${process.env.PUBLIC_URL + imgPath})`,
-                                cursor: cursor}}>Visitar</label></a>
+            <a className="buttonLink" href={props.url} style={{cursor: cursor}} ><label className="button-visit" 
+            style={{    backgroundImage: `url(${process.env.PUBLIC_URL + imgPath})`,
+                        cursor: cursor}}>Visitar</label></a>
         )
     }
     

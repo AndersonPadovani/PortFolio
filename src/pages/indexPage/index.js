@@ -149,7 +149,8 @@ function Index() {
             ? Object.keys(card).map((k, i) => {
                 return  <Cards 
                           title={card[k]['title']} 
-                          image={require('../../img/'+card[k]['img'])} 
+                          // image={require('../../img/'+card[k]['img'])} 
+                          image={window.location.origin + "/_img/" + card[k]['img']} 
                           info={card[k]['info']}
                           url={card[k]['url']} 
                           ver={card[k]['visible']} 
@@ -162,7 +163,7 @@ function Index() {
 
         <footer className='footer'>
           <span>Esta pagina foi criada e desenvolvido por Anderson Ramos Padovani 2022 &copy;</span>
-          <span>Projeto OpenSource- GITHUB <a href='https://github.com/AndersonPadovani/PortFolio' target='_blank' rel="noreferrer">VISITAR</a></span>
+          <span>Projeto OpenSource- GITHUB <a href='https://github.com/AndersonPadovani/PortFolio' target='_blank' rel="noreferrer"><strong>VISITAR</strong></a></span>
         </footer>
 
       </div>
